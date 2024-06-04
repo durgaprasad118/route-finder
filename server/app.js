@@ -1,8 +1,10 @@
 import express from "express";
-import fetch from "node-fetch";
+
 import loader from "@googlemaps/js-api-loader";
 
 const app = express();
+app.use(express.json());
+
 const PORT = 3000;
 
 // Google Maps API Key

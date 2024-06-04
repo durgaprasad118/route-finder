@@ -1,10 +1,15 @@
-import RouteFinder from './components/Map'
+import { Mapping } from "./components/mapping";
+import Showmap from "./components/showmap";
+
+// import ShowMap from "./components/showmap";
 function App() {
   return (
     <div>
-      <RouteFinder />
+      <Showmap />
+      <Mapping />
+      {/* <GetPath /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
