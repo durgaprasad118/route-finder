@@ -1,4 +1,4 @@
-const GOOGLE_MAPS_API_KEY = "AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw";
+const GOOGLE_MAPS_API_KEY = ""
 import express from "express";
 import { Client } from "@googlemaps/google-maps-services-js";
 import cors from "cors";
