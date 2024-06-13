@@ -8,7 +8,7 @@ app.use(express.json());
 const PORT = 3000;
 
 // Google Maps API Key
-const API_KEY = "AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw";
+const API_KEY = ""
 const { Loader } = loader;
 
 // Initialize Google Maps API Loader
