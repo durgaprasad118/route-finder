@@ -79,7 +79,7 @@ export const MapWithPolyline = ({ pathCoordinates }) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw">
+    <LoadScript googleMapsApiKey="">
       <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={10}>
         <Polyline
           path={pathCoordinates}

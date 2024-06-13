@@ -8,7 +8,7 @@
 // //   const fetchDirections = async () => {
 // //     try {
 // //       const response = await fetch(
-// //         `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key=AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw`
+// //         `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key=`
 // //       );
 // //       const data = await response.json();
 // //       setDirections(data);
@@ -21,7 +21,7 @@
 // //   }, []);
 // //   return (
 // //     <div className="">
-// //       <APIProvider apiKey="AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw">
+// //       <APIProvider apiKey="">
 // //         <Map className="w-[800px] h-[500px]" defaultCenter={{ lat: 22.978624, lng: 87.747803 }} defaultZoom={10} gestureHandling={"greedy"} disableDefaultUI={true}>
 // //           <Marker ref={markerRef} position={{ lat: 22.5728724, lng: 88.3639295 }} />
 // //           <Marker ref={markerRef} position={{ lat: 22.5743495, lng: 88.36287209 }} />
@@ -48,7 +48,7 @@
 // //     const fetchDirections = async () => {
 // //       try {
 // //         const response = await fetch(
-// //           `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key=AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw`
+// //           `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key=`
 // //         );
 // //         const data = await response.json();
 // //         setDirections(data);
@@ -62,7 +62,7 @@
 
 // //   return (
 // //     <div className="">
-// //       <APIProvider apiKey="AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw">
+// //       <APIProvider apiKey="">
 // //         <Map className="w-[800px] h-[500px]" defaultCenter={{ lat: 22.978624, lng: 87.747803 }} defaultZoom={10} gestureHandling={"greedy"} disableDefaultUI={true}>
 // //           <Marker position={{ lat: 22.5728724, lng: 88.3639295 }} />
 // //           <Marker position={{ lat: 22.5743495, lng: 88.36287209 }} />
@@ -95,7 +95,7 @@
 //   //   const fetchDirections = async () => {
 //   //     try {
 //   //       const response = await fetch(
-//   //         `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key=AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw`
+//   //         `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&kAIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKwAIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKwAIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKwAIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKwey=`
 //   //       );
 //   //       const data = await response.json();
 //   //       setDirections(data);
@@ -109,7 +109,7 @@
 //   // }, []);
 //   return (
 //     <div className="">
-//       <APIProvider apiKey="AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw">
+//       <APIProvider apiKey="">
 //         <Map className="w-[800px] h-[500px]" defaultCenter={{ lat: 22.978624, lng: 87.747803 }} defaultZoom={10} gestureHandling={"greedy"} disableDefaultUI={true}>
 //           <Marker position={{ lat: 22.5728724, lng: 88.3639295 }} />
 //           <Marker position={{ lat: 22.5743495, lng: 88.36287209 }} />
@@ -141,9 +141,7 @@ export const Mapping = () => {
   useEffect(() => {
     const fetchDirections = async () => {
       try {
-        const response = await fetch(
-          `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key`
-        );
+        const response = await fetch(`https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key`);
         const data = await response.json();
         setDirections(data);
       } catch (error) {
@@ -180,7 +178,7 @@ export const Mapping = () => {
 
   return (
     <div className="">
-      <APIProvider apiKey="AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw">
+      <APIProvider apiKey="">
         <Map className="w-[800px] h-[500px]" defaultCenter={{ lat: 22.978624, lng: 87.747803 }} defaultZoom={10} gestureHandling={"greedy"} disableDefaultUI={true}>
           <Marker position={{ lat: 22.5728724, lng: 88.3639295 }} />
           <Marker position={{ lat: 22.5743495, lng: 88.36287209 }} />

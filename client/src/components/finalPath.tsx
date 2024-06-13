@@ -12,7 +12,7 @@ export default function FinalPath(params) {
 
   function MyMap() {
     return (
-      <GoogleMapApiLoader apiKey="AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw">
+      <GoogleMapApiLoader apiKey="">
         <GoogleMap className="h-[400px]" initialZoom={3} initialCenter={{ lat: 0, lng: -180 }}>
           <Polyline path={flightPlanCoordinates} strokeColor="#FF0000" strokeOpacity={1.0} strokeWeight={2} geodesic />
         </GoogleMap>
