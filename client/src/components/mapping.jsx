@@ -142,7 +142,7 @@ export const Mapping = () => {
     const fetchDirections = async () => {
       try {
         const response = await fetch(
-          `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key=AIzaSyAeXU9ZqzunCegvgOV3iYrvDkUTcPAZnKw`
+          `https://maps.googleapis.com/maps/api/directions/json?origin=${22.5728724},${88.3639295}&destination=${22.5743495},${88.36287209}&key`
         );
         const data = await response.json();
         setDirections(data);
